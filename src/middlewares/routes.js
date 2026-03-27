@@ -4,7 +4,7 @@ export const routes = [
     method: "GET",
     path: "/products",
     controller: (req, res) => {
-        return res.end("Listagem de produtos")
+        return res.end(JSON.stringify(req.query))
     }
   },
 
